@@ -1,0 +1,152 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #181a20 60%, #23263a 100%);
+    color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+header {
+    background: #23263a;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+   animation: fadeInDown 1s;
+}
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.logo {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #4fc3f7;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 8px #1976d2;
+    animation: popIn 1.2s;
+}
+@keyframes popIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    80% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+nav a {
+    color: #fff;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: color 0.2s, text-shadow 0.2s;
+}
+nav a:hover {
+    color: #4fc3f7;
+    text-shadow: 0 2px 8px #4fc3f7;
+}
+.hero {
+    text-align: center;
+    padding: 6em 2em 4em 2em;
+    background: linear-gradient(135deg, #23263a 60%, #4fc3f7 100%);
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+    animation: fadeIn 1.2s;
+}
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 0.5em;
+    color: #fff;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 12px #1976d2;
+    animation: popIn 1.5s;
+}
+.subtitle {
+    font-size: 1.5em;
+    color: #cfd8dc;
+    margin-bottom: 2em;
+    animation: fadeIn 2s;
+}
+.download-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #4fc3f7 0%, #1976d2 100%);
+    color: #181a20;
+    border: none;
+    padding: 1.2em 3em;
+    border-radius: 12px;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(79,195,247,0.2);
+    transition: background 0.3s, color 0.3s, transform 0.2s;
+    margin-top: 2em;
+    animation: bounceIn 1.5s;
+}
+@keyframes bounceIn {
+    0% { transform: scale(0.7); opacity: 0; }
+    60% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); }
+}
+.download-btn:hover {
+    background: linear-gradient(90deg, #1976d2 0%, #4fc3f7 100%);
+    color: #fff;
+    transform: scale(1.07);
+    box-shadow: 0 6px 24px rgba(25,118,210,0.3);
+}
+.docs {
+    margin: 3em auto;
+    max-width: 700px;
+    background: #22243a;
+    padding: 2em;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    animation: fadeInUp 1.2s;
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.docs h2 {
+    color: #4fc3f7;
+    margin-bottom: 1em;
+    font-size: 2em;
+}
+.docs ul {
+    list-style: none;
+    padding: 0;
+}
+.docs ul li {
+    margin-bottom: 0.7em;
+    animation: fadeIn 2s;
+}
+.docs ul li a {
+    color: #4fc3f7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s;
+}
+.docs ul li a:hover {
+    color: #fff;
+    text-shadow: 0 2px 8px #4fc3f7;
+}
+footer {
+    background: #23263a;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    font-size: 1em;
+    color: #cfd8dc;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+    animation: fadeInUp 1.2s;
+}
